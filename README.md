@@ -9,7 +9,9 @@
     2.1 [Principal](#principal)
 
     2.2 [Extra](#extra)
-3. [](#)
+3. [Pruebas Funcionales](#pruebas-funcionales)
+
+    3.1 []
 
 </details>
 
@@ -80,6 +82,7 @@ En la carpeta de _Scripts_ se puede observar parte del código implementado, don
 Depues de realizar la comparativa, la mejor opción es mediante el eje Z de los cuaterniones. 
 
 **Posibles errores** 
+
 Cuando una persona, inclina la cabeza entre 5º y 10º, es casi imperceptible, por lo cual podría generar inclinaciones involuntarias. 
 
 |        Grados     |     Tipo de control   |  Tipo de inclinación |
@@ -101,8 +104,30 @@ En la primera parte se observa que cuando cambiamos el eje de las Z su rotación
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
 ### 2. Sonido 
+**Objetivo:** Permitir que la partitura se reproduzca o se pause automáticamente según si el usuario emite sonido o está en silencio.
 
+#### Esquema simple
+- Si hay sonido (tocar/silbar, cantar), la partitura sigue.
+- Si hay silencio por más de 0.5 segundos, la partitura, se pausa 
+- Cambio del color del cursor de seguimiento (pausa-> gris , reproduciendo->verde)
 
+**Posibles errores**
+
+En este caso los posibles errores, son que detecta cualquier tipo de sonido y no una nota especifica de un instrumento. Esta implementación sería un paso para poder sincronizar las notas que se tocan junto a las notas de la partitura. 
+
+##### Demostración 
+Se realizarón diferentes pruebas tanto en el simulador como en desde el móvil.
+
+Al determinar el sonido mínimo que puede causar un instrumento. Se asignó la frecuencia 0.5f por defecto para realizar la comprobacón de sonido.
+
+Durante las pruebas se utilizó el micrófono incorporado en el móvil para medir el sonido. Si el sistema detectaba sonido por encima del umbral mínimo establecido, la partitura de reanudaba, si se detectaba que el volumen bajaba durante 0.5 segundos, se pausaba. Las pruebas realizadas permitieron que el funcionamiento de pausa y reanudación ocurriera correctamente, sin la necesidad de tocar botones. Por otra parte, se ajustó la sensibilidad para evitar falsas detecciones causadas por ruido de fondo.  
+
+Video: [Prueba sonido](./videos/sonido/prueba_sonido.mp4)
+
+En el video se puede observar, que cuando no escuchamos sonido en poco tiempo el cursor verde cambia de color a gris, y si hay sonido nuevamente sonido, el cursor cambia de color a verde. 
+También, se puede obserbar dos imágenes donde muetran las salidas de la consola cuando hay y no hay sonido. 
+
+Además, en el siguiente video ([escena en unity](./videos/sonido/escena_unity_reproduccion.mp4)), se puede observar como se visualiza las pruebas dentro de unity. 
 ### 3. Corrección de errores 
 
 ## Contacto 
