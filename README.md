@@ -50,6 +50,7 @@ Los elementos principales que tiene Unity a la hora de la implementación, són 
 **Objetivo:** Permitir al usuario avanzar o retroceder páginas o párrafos de una partitura sin necesidad de presionar botones ni movimientos excesivos con la cabeza, utilizando gestos sutiles basados en inclinación.
 
 ![Ejemplo de inclinación lateral](./imagenes/e_edit.jpg)
+
 En la anterior imagen se puede obserbar una representación de inclinación lateral.
 #### Pasos realizados y evolución 
 Para alcanzar el objetivo propuesto, se plantearon distintas formas de implementación. Una de ellas consiste en aprovechar el eje de Z, mientras que otra se basa en el uso del acelerómetro del dispositivo móvil. 
@@ -81,7 +82,8 @@ Cuando una persona, inclina la cabeza entre 5º y 10º, es casi imperceptible, p
 
 Al determinar cuántos grados sería aceptable para evitar acciones involuntarias, se realizó pruebas en Unity donde podemos ejecutar con simuladores en el inspector. 
 
-[Prueba de Inclinación](./prueva_unity.mp4)
+![Prueba de Inclinación](./videos/prueba_inclinacion.mp4)
+
 En la primera parte se observa que cuando cambiamos el eje de las Z su rotación y este supera los 20º o es inferior a -20º, procede a avanzar o retrocer los párrafos en caso de estar en ese modo y las páginas en caso de estar en modo completo. 
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
