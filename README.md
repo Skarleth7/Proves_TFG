@@ -147,6 +147,12 @@ También, se puede obserbar dos imágenes donde muetran las salidas de la consol
 
 Además, en el siguiente video ([escena en unity](./videos/sonido/escena_unity_reproduccion.mp4)), se puede observar como se visualiza las pruebas dentro de unity. 
 ### 3. Corrección de errores 
+El error que se detecto durante el desarrollo fue la superposición del modo página y parrafo como se muestra en la siguiente imagen: 
+
+![Sobreposición](./imagenes/sobreposicion.png)
+
+Video: [Solución](./videos/cambio_pagina.mp4)
+En el video se puede observar la corrección para que ya no haya la superposición del modo párrafo al modo página. 
 
 ## Contacto 
 - Para cualquier duda podeis contactar con AprilSkarleth.Chavez@autonoma.cat
