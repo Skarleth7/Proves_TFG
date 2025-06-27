@@ -105,22 +105,21 @@ Cuando una persona, inclina la cabeza entre 5º y 10º, es casi imperceptible, p
 Al determinar cuántos grados sería aceptable para evitar acciones involuntarias, se realizó pruebas en Unity donde podemos ejecutar con simuladores en el inspector. 
 A continuación, se explicará el contenido de cada video correspondiente con esta sección de la carpeta _Videos/Inclinación_. 
 
-Video: [Prueba de Inclinación](./videos/Inclinación/prueba_inclinacion.mp4)
+Video: [Prueba de Inclinación](./videos/Inclinación/inclinación_móvil.mp4)
+
+El video muestra cómo al inclinar el móvil hacia la derecha se avanza de párrafos y al inclinar hacia la izquierda retrocede párrafos. 
+
+En la esquina inferior izquierda se visualizan la página actual y el ángulo de inclinación.
+
+
+
+
+Video: [Prueba de Inclinación Unity](./videos/Inclinación/prueba_inclinacion.mp4)
 
 El video contiene una demostración de cómo se observa cuando realizamos pruebas en unity en el apartado de _inspector_, donde podemos añadir la inclinación con la que se quiere realizar las pruebas.
 En la primera parte se observa que cuando cambiamos el eje de las Z su rotación y este supera los 20º o es inferior a -20º, procede a avanzar o retrocer los párrafos en caso de estar en ese modo y las páginas en caso de estar en modo completo. 
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
-|Nº de intento| Inclinación| Acción esperada | Acción detectada| Test | Comentario|
-|-------------|------------|----|---|---|---|
-|1|-25|Avanzar párrafo| Avanzar párrafo |Correcto |  |
-|2|+10 | Ningún cambio|Ningún cambio|Correcto| |
-|3|-19| Ningún cambio| Avanzar párrafo|Fallo |Revisar la comparación|
-|4|19| Ningún cambio| Retroceder párrafo|Fallo |Revisar la comparación|
-|5|-21| Avanzar párrafo | Avanzar párrafo| Correcto| |
-|6|21| Retroceder párrafo | Retroceder párrafo| Correcto| |
-|7|20| Ningún cambio|Ningún cambio|Correcto| |
-|8|-20| Ningún cambio|Ningún cambio|Correcto| |
 
 ### 2. Detección de Sonido 
 **Objetivo:** Permitir que la partitura se reproduzca o se pause automáticamente según si el usuario emite sonido o está en silencio.
