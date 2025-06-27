@@ -11,7 +11,26 @@
     2.2 [Extra](#extra)
 3. [Pruebas Funcionales](#pruebas-funcionales)
 
-    3.1 []
+    3.1 [Cambio de página/párrafo por inclinación lateral](#1-cambio-de-páginapárrafo-por-inclinación-lateral)
+
+        3.1.1 [Pasos realizados y evolución]
+
+        3.1.2 [Navegación por inclinación](#navegación-por-inclinación)
+
+        3.1.3 [Navegación con el Acelerómetro](#navegación-con-el-acelerómetro)
+
+        3.1.4 [Comparativa](#comparativa)
+
+        3.1.5 [Demostración](#demostración)
+
+    3.2.[Detección de Sonido](#2-detección-de-sonido)
+
+        3.2.1 [Esquema Simple](#esquema-simple)
+
+        3.2.2 [Posibles errores]
+
+        3.2.3 [Demostración](#demostración-1)
+4. [Contacto](#contacto)
 
 </details>
 
@@ -103,7 +122,7 @@ El video contiene una demostración de cómo se observa cuando realizamos prueba
 En la primera parte se observa que cuando cambiamos el eje de las Z su rotación y este supera los 20º o es inferior a -20º, procede a avanzar o retrocer los párrafos en caso de estar en ese modo y las páginas en caso de estar en modo completo. 
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
-### 2. Sonido 
+### 2. Detección de Sonido 
 **Objetivo:** Permitir que la partitura se reproduzca o se pause automáticamente según si el usuario emite sonido o está en silencio.
 
 #### Esquema simple
