@@ -65,8 +65,19 @@ Al empezar a desarrollar el código se tuvo en cuenta la inclinación del eje **
 Esto se implementa mediante la rotación en el Z. Si el valor supera un umbral (por ejemplo +/- 20 grados), se cuenta el tiempo mantenido y se ejecuta la acción.
 
 ##### Navegación con el Acelerómetro
+El acelerómetro es un dispositivo que puede medir la aceleración o la tasa de cambio de velocidad de un objeto. Algunos móviles permiten usar el acelerómetro para detectar inclinaciones. 
+En la carpeta de _Scripts_ se puede observar parte del código implementado, donde el _Input.acceleration_ permite detectar las inclinación físicas del dispositivo. 
+##### Comparativa
+| Criterio | Inclinación por eje Z | Acelerómetro |
+|----------|-----------------------|--------------|
+| Precisión| Alta (usa rotación directa de la cabeza/cámara)|Media(puede ser afectado por movimientos falsos o sacudidas)|
+|Más estable | menos sensible a temblores | Menos estable ya que requiere filtrado de ruido|
+|Obtención de datos |  _Transform.eulerAngles.z_ | _Input.acceleration_|
+|Rendimiento | Ligero ya que solo requiere lectura de rotación | Ligero, pero puede requerir algun ajuste extra |
+|Intuitivo para el usuario| Muy intuitivo, requiere inclinación ligera del cuello| Menos intuitivo y puede dispararse por error| 
+|Calibración adicional | A veces sí (si el eje base esta mal orientado)| Sí, para evitar falsos positivos|
 
-
+Depues de realizar la comparativa, la mejor opción es mediante el eje Z de los cuaterniones. 
 
 **Posibles errores** 
 Cuando una persona, inclina la cabeza entre 5º y 10º, es casi imperceptible, por lo cual podría generar inclinaciones involuntarias. 
@@ -81,14 +92,17 @@ Cuando una persona, inclina la cabeza entre 5º y 10º, es casi imperceptible, p
 ##### Demostración 
 
 Al determinar cuántos grados sería aceptable para evitar acciones involuntarias, se realizó pruebas en Unity donde podemos ejecutar con simuladores en el inspector. 
+A continuación, se explicará el contenido de cada video correspondiente con esta sección de la carpeta _Videos/Inclinación_. 
 
-![Prueba de Inclinación](./videos/prueba_inclinacion.mp4)
+Video: [Prueba de Inclinación](./videos/Inclinación/prueba_inclinacion.mp4)
 
+El video contiene una demostración de cómo se observa cuando realizamos pruebas en unity en el apartado de _inspector_, donde podemos añadir la inclinación con la que se quiere realizar las pruebas.
 En la primera parte se observa que cuando cambiamos el eje de las Z su rotación y este supera los 20º o es inferior a -20º, procede a avanzar o retrocer los párrafos en caso de estar en ese modo y las páginas en caso de estar en modo completo. 
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
-
 ### 2. Sonido 
+
+
 ### 3. Corrección de errores 
 
 ## Contacto 
