@@ -11,25 +11,16 @@
     2.2 [Extra](#extra)
 3. [Pruebas Funcionales](#pruebas-funcionales)
 
-    3.1 [Cambio de página/párrafo por inclinación lateral](#1-cambio-de-páginapárrafo-por-inclinación-lateral)
-
-        3.1.1 [Pasos realizados y evolución]
-
-        3.1.2 [Navegación por inclinación](#navegación-por-inclinación)
-
-        3.1.3 [Navegación con el Acelerómetro](#navegación-con-el-acelerómetro)
-
-        3.1.4 [Comparativa](#comparativa)
-
-        3.1.5 [Demostración](#demostración)
-
-    3.2.[Detección de Sonido](#2-detección-de-sonido)
-
-        3.2.1 [Esquema Simple](#esquema-simple)
-
-        3.2.2 [Posibles errores](#posibles-errores)
-
-        3.2.3 [Demostración](#demostración-1)
+    3.1 [Cambio de página/párrafo por inclinación lateral](#1-cambio-de-páginapárrafo-por-inclinación-lateral)                                                             
+        3.1.1 [Pasos realizados y evolución](#pasos-realizados-y-evolución)                        
+        3.1.2 [Navegación por inclinación](#navegación-por-inclinación)  
+        3.1.3 [Navegación con el Acelerómetro](#navegación-con-el-acelerómetro)       
+        3.1.4 [Comparativa](#comparativa)   
+        3.1.5 [Demostración](#demostración)   
+    3.2.[Detección de Sonido](#2-detección-de-sonido)   
+        3.2.1 [Esquema Simple](#esquema-simple)    
+        3.2.2 [Posibles errores](#posibles-errores)   
+        3.2.3 [Demostración](#demostración-1)  
 4. [Contacto](#contacto)
 
 </details>
