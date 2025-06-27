@@ -4,10 +4,8 @@
 <summary> Tabla de contenidos </summary>
 
 1. [Sobre el proyecto](#ℹ️sobre-el-proyecto)
-2. [Objetivos](#objetivos)
-
-    2.1 [Principal](#principal)
-
+2. [Objetivos](#objetivos)  
+    2.1 [Principal](#principal)   
     2.2 [Extra](#extra)
 3. [Pruebas Funcionales](#pruebas-funcionales)
 
@@ -113,6 +111,17 @@ El video contiene una demostración de cómo se observa cuando realizamos prueba
 En la primera parte se observa que cuando cambiamos el eje de las Z su rotación y este supera los 20º o es inferior a -20º, procede a avanzar o retrocer los párrafos en caso de estar en ese modo y las páginas en caso de estar en modo completo. 
 La segunda parte del video, se puede observar como se capta los angulos y encima muestra el párrafo dónde se encuentra.
 
+|Nº de intento| Inclinación| Acción esperada | Acción detectada| Test | Comentario|
+|-------------|------------|----|---|---|---|
+|1|-25|Avanzar párrafo| Avanzar párrafo |Correcto |  |
+|2|+10 | Ningún cambio|Ningún cambio|Correcto| |
+|3|-19| Ningún cambio| Avanzar párrafo|Fallo |Revisar la comparación|
+|4|19| Ningún cambio| Retroceder párrafo|Fallo |Revisar la comparación|
+|5|-21| Avanzar párrafo | Avanzar párrafo| Correcto| |
+|6|21| Retroceder párrafo | Retroceder párrafo| Correcto| |
+|7|20| Ningún cambio|Ningún cambio|Correcto| |
+|8|-20| Ningún cambio|Ningún cambio|Correcto| |
+
 ### 2. Detección de Sonido 
 **Objetivo:** Permitir que la partitura se reproduzca o se pause automáticamente según si el usuario emite sonido o está en silencio.
 
@@ -121,7 +130,7 @@ La segunda parte del video, se puede observar como se capta los angulos y encima
 - Si hay silencio por más de 0.5 segundos, la partitura, se pausa 
 - Cambio del color del cursor de seguimiento (pausa-> gris , reproduciendo->verde)
 
-#### Posibles errores**
+#### Posibles errores
 
 En este caso los posibles errores, son que detecta cualquier tipo de sonido y no una nota especifica de un instrumento. Esta implementación sería un paso para poder sincronizar las notas que se tocan junto a las notas de la partitura. 
 
