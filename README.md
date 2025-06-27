@@ -27,7 +27,7 @@
 
         3.2.1 [Esquema Simple](#esquema-simple)
 
-        3.2.2 [Posibles errores]
+        3.2.2 [Posibles errores](#posibles-errores)
 
         3.2.3 [Demostración](#demostración-1)
 4. [Contacto](#contacto)
@@ -130,7 +130,7 @@ La segunda parte del video, se puede observar como se capta los angulos y encima
 - Si hay silencio por más de 0.5 segundos, la partitura, se pausa 
 - Cambio del color del cursor de seguimiento (pausa-> gris , reproduciendo->verde)
 
-**Posibles errores**
+#### Posibles errores**
 
 En este caso los posibles errores, son que detecta cualquier tipo de sonido y no una nota especifica de un instrumento. Esta implementación sería un paso para poder sincronizar las notas que se tocan junto a las notas de la partitura. 
 
