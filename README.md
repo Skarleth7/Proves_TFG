@@ -152,7 +152,8 @@ El error que se detecto durante el desarrollo fue la superposición del modo pá
 ![Sobreposición](./imagenes/sobreposicion.png)
 
 Video: [Solución](./videos/cambio_pagina.mp4)
-En el video se puede observar la corrección para que ya no haya la superposición del modo párrafo al modo página. 
+
+En el video se puede observar la demostración de que ya no hay superposición del modo párrafo al modo página y viceversa. 
 
 ## Contacto 
 - Para cualquier duda podeis contactar con AprilSkarleth.Chavez@autonoma.cat
